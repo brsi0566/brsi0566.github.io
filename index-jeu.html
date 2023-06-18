@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bruno Singer">
+    <meta name="description" content="Site consacré à m'apprentissage de la création internet et d'un jeu en python.">
+    <title>Saute Piscine</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+     <br><br><br>
+     <h1>Projet SAUTE PISCINE</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="accueil"><a href="index.html">Accueil</a></li>
+        <li class="lejeu"><a href="index-jeu.html">Le jeu</a></li>
+        <li class="inactif"><a href="#">Projets</a></li>
+        <li class="inactif"><a href="#">Contact</a></li>
+        <li class="tests"><a href="index-tests.html">Tests</a></li>
+      </ul>
+
+<!--       <form>
+        <input type="search" name="rech" placeholder="Rechercher">
+        <input type="submit" value="Lancer !">
+      </form>
+ -->
+    </nav>
+
+    <br>
+
+    <main>
+      <article>
+      	<h2>Explication des règles</h2>
+      	<section>
+        <p>Ce jeu consiste à sauter dans une bouée qui flotte dans une <strong>piscine</strong> quadrillée, mais évidemment ce serait trop simple si on n'avait pas les yeux masqués.</p>
+     	  <p>Dit comme ça, ça ressemblerait à une simple bataille navale, ce serait sous estimer les particularités de la bouée...</p>
+        </section>
+	      <h3>Les niveaux</h3>
+        <p>Il y aura différents niveaux, du plus <em>simpliste</em> au plus <strong>diabolique</strong></p>
+        
+	      <h3>Règles complètes</h3>
+        <p>Pour expliquer un peu le fonctionnement du jeu, on va en profiter pour travailler et mettre en pratique l'apprentissage des tableaux en HTML.</p>
+        
+        <!-- Essai de tableau en HTML -->
+        <table>
+          <caption>Exemple de piscine de 10 cases sur 8</caption>
+          <tr>
+            <th>&nbsp;</th>
+            <th style="width: 15px; border: 1px solid black">A</th>
+            <th style="width: 15px; border: 1px solid black">B</th>            
+            <th style="width: 15px; border: 1px solid black">C</th>
+            <th style="width: 15px; border: 1px solid black">D</th>
+            <th style="width: 15px; border: 1px solid black">E</th>
+            <th style="width: 15px; border: 1px solid black">F</th>
+            <th style="width: 15px; border: 1px solid black">G</th>
+            <th style="width: 15px; border: 1px solid black">H</th>
+            <th style="width: 15px; border: 1px solid black">I</th>
+            <th style="width: 15px; border: 1px solid black">J</th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">1</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">2</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">3</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">4</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">5</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">6</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">7</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+          <tr>
+            <th style="width: 15px; border: 1px solid black">8</th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+            <th style="background-color: turquoise">   </th>
+          </tr>
+        </table>
+
+        <br>
+
+      </article>
+
+      <h2>Liens d'aqui</h2>
+      <aside>
+        <a href="https://www.lindependant.fr/" title="L'indep" target="_blank"><img src="images/logo-indep.png" alt="L'indep"></a>
+        <a href="https://www.usap.fr/" title="Endavant" target="_blank"><img src ="images/logo-usap.png"></a>
+        <a href="https://perpignanmediterraneetourisme.fr/miam-le-top-des-recettes-catalanes-a-deguster" title="Menjar" target="_blank"><img src="images/logo-recettes.png"></a>
+        <a href="https://meteofrance.com/previsions-meteo-france/pyrenees-orientales/66" title="Sol/pluja" target="_blank"><img src="images/logo-meteo.png"></a>
+        <a href="https://www.francebleu.fr/roussillon" title="Radio d'ici" target="_blank"><img src="images/logo-fbrici.png"></a>
+      </aside>
+        
+    </main>
+    
+
+    <footer>
+      <p>©Copyright B. Singer. Tous droits réservés.</p>
+    </footer>
+
+
+    <!-- la présence de l'attribut disabled empêche l'utilisateur final d'entrer du texte dans    le champ de saisie
+    <input type="text" disabled>
+    la saisie de texte est autorisée puisque l'attribut disabled est omis
+    <input type="text">
+
+    <script src="mon-fichier-js.js"></script>
+
+    Todo list CV, Actualité du projet (son évolution) Quoi de neuf ? Où en est le projet ?, Gratuité des outils et de la diffusion, Musique genre Sampa -- >
+  </body>
+</html>
