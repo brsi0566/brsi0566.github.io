@@ -14,12 +14,11 @@ html {
 }*/
 
 header {
-  display: flex;
-/*  height: 140px;
+  height: 140px;
   background-image: url(../images/logo.png), url(../images/bouee.png);
   background-repeat: no-repeat;
   background-position: left, right;
-*/}
+}
 
 h1 {
   display: block;
@@ -142,4 +141,7 @@ aside > a {
   background-color: honeydew;
 }
 
+.box1 {
+  background-image: url(images/logo.png);
+}
 
